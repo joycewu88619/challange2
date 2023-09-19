@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+p {
+  color: #A8A196;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 13.5px;
+}
+
+.outer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.outer .container {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+}
+.outer .container .box1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  padding: 20px;
+}
+.outer .container .box1 h3 {
+  color: hsl(241, 100%, 89%);
+}
+.outer .container .box1 .score {
+  border-radius: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25px 0;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.outer .container .box1 .score h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+.outer .container .box1 .score p {
+  color: hsl(241, 100%, 89%);
+}
+.outer .container .box1 h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+.outer .container .box1 .comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.outer .container .box1 .comment p {
+  color: hsl(241, 100%, 89%);
+  line-height: 1.2;
+  text-align: center;
+}
+.outer .container .box2 {
+  width: 25%;
+  border-radius: 20px;
+  padding: 20px;
+}
+.outer .container .box2 h3 {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+.outer .container .box2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.outer .container .box2 ul .list1 {
+  background: #fff0f0;
+  margin-top: 20px;
+}
+.outer .container .box2 ul .list1 h3 {
+  color: hsl(0, 100%, 67%);
+}
+.outer .container .box2 ul .list2 {
+  background: #fff8eb;
+}
+.outer .container .box2 ul .list2 h3 {
+  color: hsl(39, 100%, 56%);
+}
+.outer .container .box2 ul .list3 {
+  background: #f0fffb;
+}
+.outer .container .box2 ul .list3 h3 {
+  color: hsl(166, 100%, 37%);
+}
+.outer .container .box2 ul .list4 {
+  background: #e7eafd;
+  margin-bottom: 20px;
+}
+.outer .container .box2 ul .list4 h3 {
+  color: hsl(234, 85%, 45%);
+}
+.outer .container .box2 ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+.outer .container .box2 ul li div {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+.outer .container .box2 ul li div p {
+  font-weight: bold;
+}
+.outer .container .box2 ul li h3 {
+  font-size: 15px;
+}
+.outer .container .box2 ul li .rate {
+  color: hsl(224, 30%, 27%);
+}
+.outer .container .box2 .button {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.outer .container .box2 .button p {
+  color: hsl(0, 0%, 100%);
+}
+.outer .container .box2 .button:hover {
+  background: hsl(224, 30%, 27%);
+}
+
+@media screen and (max-width: 375px) {
+  .outer .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .outer .container .box1 {
+    width: 100%;
+  }
+  .outer .container .box2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=all.css.map */
